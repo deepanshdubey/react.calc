@@ -64,7 +64,8 @@ class App extends Component
       {symbol: '+', cols: 1, action: this.addToCurrent},
       {symbol: '0', cols: 2, action: this.addToCurrent},
       {symbol: '.', cols: 1, action: this.addToCurrent},
-      {symbol: '=', cols: 1, action: this.calculate}
+      {symbol: '<', cols: 1, action: this.shiftleft},
+      {symbol: '>', cols: 1, action: this.shiftright}
     ];
     return (
       <div className="App">
